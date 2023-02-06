@@ -25,7 +25,7 @@ function QRgenerate() {
       <button onClick={GenerateQRCode}>Generate</button>
       {qr && (
         <>
-          <img src={qr} />
+          <img src={qr} download />
         </>
       )}
     </div>
