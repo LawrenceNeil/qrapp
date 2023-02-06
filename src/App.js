@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route
-          path="/dashboard"
+          path="qrapp/dashboard"
           element={
             <RequireAuth loginPath={"/"}>
               <Dashboard />
