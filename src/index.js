@@ -17,7 +17,7 @@ root.render(
       cookieSecure={false}
       cookieMaxAge={60 * 60 * 24 * 7}
     >
-      <Router basename="qrapp">
+      <Router basename="/qrapp">
         <GlobalStyle />
         <App />
       </Router>

@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route exact path="/" element={<Login />} />
         <Route
-          path="qrapp/dashboard"
+          path="/dashboard"
           element={
             <RequireAuth loginPath={"/"}>
               <Dashboard />
