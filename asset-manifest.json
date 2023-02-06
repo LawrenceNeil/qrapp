@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/qrapp/static/js/main.5f9a88f7.js",
+    "index.html": "/qrapp/index.html",
+    "main.5f9a88f7.js.map": "/qrapp/static/js/main.5f9a88f7.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5f9a88f7.js"
+  ]
+}
