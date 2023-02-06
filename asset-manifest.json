@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/qrapp/static/js/main.267ccab3.js",
+    "main.js": "/qrapp/static/js/main.ce14231d.js",
     "index.html": "/qrapp/index.html",
-    "main.267ccab3.js.map": "/qrapp/static/js/main.267ccab3.js.map"
+    "main.ce14231d.js.map": "/qrapp/static/js/main.ce14231d.js.map"
   },
   "entrypoints": [
-    "static/js/main.267ccab3.js"
+    "static/js/main.ce14231d.js"
   ]
 }
