@@ -18,7 +18,7 @@ function QRgenerate() {
       <h1>QR Generator</h1>
       <input
         type="text"
-        placeholder="e.g. https://google.com"
+        placeholder="Search Students here"
         value={temp}
         onChange={(e) => setTemp(e.target.value)}
       />

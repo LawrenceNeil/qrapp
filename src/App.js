@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { RequireAuth } from "react-auth-kit";
+import Login from "./routes/Login";
+import Maindash from "./components/Dashboard/Maindash";
+import QRscan from "./components/Dashboard/QRscan";
+import Dashboard from "./components/Dashboard";
+import QRgenerate from "./components/Dashboard/QRgenerate";
+import Student from "./components/Dashboard/Student";
+import Attendance from "./components/Dashboard/Attendance";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth loginPath={"/"}>
+              <Dashboard />
+            </RequireAuth>
+          }
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route path="" element={<Maindash />} />
+          <Route path="scan" element={<QRscan />} />
+          <Route path="generate" element={<QRgenerate />} />
+          <Route path="student" element={<Student />} />
+          <Route path="attendance" element={<Attendance />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
